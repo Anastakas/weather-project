@@ -1,0 +1,126 @@
+.container {
+  width: 70%;
+  border: 5px solid #1ab2a8;
+  padding: 30px 60px 10px 60px;
+  margin: 20px 60px;
+}
+header {
+  margin: 20px 0 40px 0;
+  padding: 0;
+}
+h1 {
+  font-size: 26px;
+  font-weight: normal;
+  width: 100%;
+  margin: 0 20px 0 0;
+  padding-right: 65px;
+}
+a {
+  text-decoration: none;
+}
+#cels-temp {
+  color: #ab47bc;
+}
+#far-temp {
+  color: #1ab2a8;
+}
+#current-description {
+  padding: 20px;
+  font-size: 20px;
+}
+#location-button {
+  color: #ab47bc;
+  background: #ffff;
+  border: 2px solid #1ab2a8;
+  padding: 10px 20px;
+  position: relative;
+  bottom: 35px;
+  border-radius: 20px;
+  box-shadow: 3px 2px 5px #1ab2a8;
+}
+#location-button:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+.date {
+  color: #ab47bc;
+  padding: 1px 2px;
+}
+.card,
+.date,
+.search {
+  border: 5px solid #1ab2a8;
+  border-radius: 0;
+}
+
+.searchMenu {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 0;
+}
+.search {
+  width: calc(100% / 2);
+}
+.Emojy {
+  width: 20%;
+  margin-left: 0;
+  border: solid #1ab2a8;
+  border-width: 5px 5px 5px 2.5px;
+}
+.City {
+  width: 80%;
+  border: solid #1ab2a8;
+  border-width: 5px 2.5px 5px 5px;
+}
+
+.now {
+  font-size: 40px;
+  font-weight: bold;
+}
+.card {
+  margin: 0 120px 20px 0;
+}
+
+.constant {
+  color: #1ab2a8;
+}
+.change {
+  color: #ab47bc;
+}
+.symbols {
+  font-size: 20px;
+}
+.days {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 0;
+  margin: 40px 0 20px 0;
+}
+
+.day {
+  border: solid #1ab2a8;
+  width: calc(100% / 5);
+  padding: 20px 0;
+}
+.date,
+.days,
+.search,
+.searchMenu,
+.container {
+  text-align: center;
+}
+.one {
+  border-width: 5px 2.5px 5px 5px;
+}
+.two {
+  border-width: 5px 2.5px 5px 2.5px;
+}
+.three {
+  border-width: 5px 2.5px 5px 2.5px;
+}
+.four {
+  border-width: 5px 2.5px 5px 2.5px;
+}
+.five {
+  border-width: 5px 5px 5px 2.5px;
+}
