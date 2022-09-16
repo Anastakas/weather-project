@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=di, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="row">
+          <div class="col-4">
+            <h1 class="constant">World weather</h1>
+          </div>
+          <div class="col-4">
+            <div class="date">
+              <span id="current-date">Sun</span>
+              <span id="current-time"> </span>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <form class="searchMenu" id="search-city">
+              <input
+                type="text"
+                placeholder="enter city"
+                autofocus="on"
+                class="search City"
+                id="input-city"
+              />
+
+              <input type="submit" value="🔎" class="search Emojy" />
+            </form>
+          </div>
+        </div>
+      </header>
+      <div class="card actual">
+        <div class="card-body actual">
+          <div class="row now">
+            <div class="change col-4">
+              <span id="current-city">Kyiv</span>
+            </div>
+            <div class="change col-4">
+              <span id="current-temp">30</span>
+              <span class="symbols">
+                <a href="#" id="cels-temp">℃</a>
+                |
+                <a href="#" id="far-temp">℉</a>
+              </span>
+            </div>
+            <div class="change col-4" id="current-description">cloudy</div>
+          </div>
+
+          <br />
+
+          <div class="row humidity">
+            <div class="constant col-4">humidity</div>
+            <div class="change col-4" id="current-humidity">60%</div>
+          </div>
+
+          <br />
+
+          <div class="row wind">
+            <div class="constant col-4">wind</div>
+            <div class="change col-4" id="current-windspeed">1 km/c</div>
+            <div class="col-4">
+              <button id="location-button">Current location</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="days">
+        <div class="day one">
+          <div class="constant">Mon</div>
+          <div class="change">28℃</div>
+          <div>🌦</div>
+        </div>
+        <div class="day two">
+          <div class="constant">Teu</div>
+          <div class="change">29℃</div>
+          <div>☁</div>
+        </div>
+        <div class="day three">
+          <div class="constant">Wen</div>
+          <div class="change">27℃</div>
+          <div>🌧</div>
+        </div>
+        <div class="day four">
+          <div class="constant">Thu</div>
+          <div class="change">26℃</div>
+          <div>⛈</div>
+        </div>
+        <div class="day five">
+          <div class="constant">Fri</div>
+          <div class="change">29℃</div>
+          <div>⛅</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
